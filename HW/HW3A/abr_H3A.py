@@ -7,11 +7,10 @@ def to_hex_string(data):
         0: '0', 1: '1', 2: '2', 3: '3', 4: '4', 5: '5', 6: '6', 7: '7',
         8: '8', 9: '9', 10: 'a', 11: 'b', 12: 'c', 13: 'd', 14: 'e', 15: 'f' 
         }
-    hexstring = ""
+    hex_string = ""
     for i in data:
-        hexstring += decimal_to_hex[i]
-    return hexstring
-    
+        hex_string += decimal_to_hex[i]
+    return hex_string
 
 
 def count_runs(flat_data):
