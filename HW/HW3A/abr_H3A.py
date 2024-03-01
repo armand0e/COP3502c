@@ -61,14 +61,14 @@ def main():
         print("0. Exit")
         print("1. Load File")
         print("2. Load Test Image")
-        print("3. Read RLE String")
-        print("4. Read RLE Hex String")
-        print("5. Read Data Hex String")
+        # print("3. Read RLE String")
+        # print("4. Read RLE Hex String")
+        # print("5. Read Data Hex String")
         print("6. Display Image")
-        print("7. Display RLE String")
-        print("8. Display Hex RLE Data")
-        print("9. Display Hex Flat Data\n")
-        selection = input("Select a Menu Option: ")
+        # print("7. Display RLE String")
+        # print("8. Display Hex RLE Data")
+        # print("9. Display Hex Flat Data")
+        selection = input("\nSelect a Menu Option: ")
         
         try:
             selection = int(selection)
@@ -110,7 +110,7 @@ def main():
             else:
                 # Invalid Input
                 print("Invalid input! Please enter an integer 0-9.")
-        except:
+        except ValueError:
             # Invalid Input
             print("Invalid input! Please enter an integer 0-9.")
 

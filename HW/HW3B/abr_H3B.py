@@ -2,52 +2,54 @@ from console_gfx import ConsoleGfx
 
 
 def to_hex_string(data):
-    # Translates data (RLE or raw) a hexadecimal string (without delimiters). This method can also aid debugging
-    decimal_to_hex = {  
-        0: '0', 1: '1', 2: '2', 3: '3', 4: '4', 5: '5', 6: '6', 7: '7',
-        8: '8', 9: '9', 10: 'a', 11: 'b', 12: 'c', 13: 'd', 14: 'e', 15: 'f' 
-        }
-    hexstring = ""
+    # 1. Translates data (RLE or raw) a hexadecimal string (without delimiters). This method can also aid debugging
+    decimal_to_hex = {0: '0', 1: '1', 2: '2', 3: '3', 4: '4', 5: '5', 6: '6', 7: '7',
+                      8: '8', 9: '9', 10: 'a', 11: 'b', 12: 'c', 13: 'd', 14: 'e', 15: 'f'}
+    hex_string = ""
     for i in data:
-        hexstring += decimal_to_hex[i]
-    return hexstring
-    
+        hex_string += decimal_to_hex[i]
+    return hex_string
 
 
 def count_runs(flat_data):
-    # Returns number of runs of data in an image data set; double this result for length of encoded (RLE) list.
+    # 2. Returns number of runs of data in an image data set; double this result for length of encoded (RLE) list.
     pass
 
 
 def encode_rle(flat_data):
-    # Returns encoding (in RLE) of the raw data passed in; used to generate RLE representation of a data.
+    # 3. Returns encoding (in RLE) of the raw data passed in; used to generate RLE representation of a data.
     pass
 
 
 def get_decoded_length(rle_data):
-    # Returns decompressed size RLE data; used to generate flat data from RLE encoding. (Counterpart to #2)
+    # 4. Returns decompressed size RLE data; used to generate flat data from RLE encoding. (Counterpart to #2)
     pass
 
 
 def decode_rle(rle_data):
-    # Returns the decoded data set from RLE encoded data. This decompresses RLE data for use. (Inverse of #3)
+    # 5. Returns the decoded data set from RLE encoded data. This decompresses RLE data for use. (Inverse of #3)
     pass
 
 
 def string_to_data(data_string):
-    # Translates a string in hexadecimal format into byte data (can be raw or RLE). (Inverse of #1)
-    pass
+    # 6. Translates a string in hexadecimal format into byte data (can be raw or RLE). (Inverse of #1)
+    hex_to_decimal = {'0': 0, '1': 1, '2': 2, '3': 3, '4': 4, '5': 5, '6': 6, '7': 7,
+                      '8': 8, '9': 9, 'a': 10, 'b': 11, 'c': 12, 'd': 13, 'e': 14, 'f': 15}
+    data = []
+    for i in data_string:
+        data.append(hex_to_decimal[i])
+    return data
 
 
 def to_rle_string(rle_data):
-    # Translates RLE data into a human-readable representation. For each run, in order, it should display the run 
-    # length in decimal (1-2 digits); the run value in hexadecimal (1 digit); and a delimiter, ‘:’, between runs. 
-    # (See examples in standalone section.)
+    # 7. Translates RLE data into a human-readable representation. For each run, in order, it should display the run
+    #    length in decimal (1-2 digits); the run value in hexadecimal (1 digit); and a delimiter, ‘:’, between runs.
+    #    (See examples in standalone section.)
     pass
 
 
 def string_to_rle(rle_string):
-    # Translates a string in human-readable RLE format (with delimiters) into RLE byte data. (Inverse of #7)
+    # 8. Translates a string in human-readable RLE format (with delimiters) into RLE byte data. (Inverse of #7)
     pass
 
 
@@ -68,9 +70,9 @@ def main():
         print("6. Display Image")
         print("7. Display RLE String")
         print("8. Display Hex RLE Data")
-        print("9. Display Hex Flat Data\n")
-        selection = input("Select a Menu Option: ")
-        
+        print("9. Display Hex Flat Data")
+        selection = input("\nSelect a Menu Option: ")
+
         try:
             selection = int(selection)
             if 0 <= selection <= 9:
@@ -111,10 +113,10 @@ def main():
             else:
                 # Invalid Input
                 print("Invalid input! Please enter an integer 0-9.")
-        except:
+        except ValueError:
             # Invalid Input
             print("Invalid input! Please enter an integer 0-9.")
 
-    
+
 if __name__ == "__main__":
     main()
