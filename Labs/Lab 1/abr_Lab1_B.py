@@ -1,3 +1,5 @@
+# For a given length and width of a rectangle,
+# write a program to calculate and display the perimeter, area and the length of the diagonal of the rectangle.
 
 #take user input
 length = float(input("Enter the length: "))
