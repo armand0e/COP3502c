@@ -1,9 +1,35 @@
-data_string = '3f64'
-# 6. Translates a string in hexadecimal format into byte data (can be raw or RLE). (Inverse of #1)
-hex_to_decimal = {'0': 0, '1': 1, '2': 2, '3': 3, '4': 4, '5': 5, '6': 6, '7': 7,
-                  '8': 8, '9': 9, 'a': 10, 'b': 11, 'c': 12, 'd': 13, 'e': 14, 'f': 15}
-data = []
-for i in data_string:
-    data.append(hex_to_decimal[i])
+def print_board(board):
+    for i in range(len(board)):
+        row = ""
+        for j in range(len(board[i])):
+            row += board[i][j] + " "
+        print(row)
 
-print(data)
+
+def initialize_board(num_rows, num_cols):
+    board = [['-'] * num_cols] * num_rows
+    return board
+
+
+def insert_chip(board, col, chip_type):
+    for i in range(len(board)):
+        for row in range(len(board[i])):
+            if board[row-1][col] == '-':
+                board[row-1][col] = chip_type
+                break
+
+
+def main():
+    cols = 5
+    rows = 4
+    board = initialize_board(rows, cols)
+    print_board(board)
+    chip = 'x'
+
+    col = int(input('choose column'))
+    insert_chip(board, col, chip)
+    print_board(board)
+
+
+if __name__ == '__main__':
+    main()
