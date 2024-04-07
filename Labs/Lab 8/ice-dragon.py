@@ -4,5 +4,5 @@ class Dragon:
         self.image = None
         
     def can_breathe_fire(self):
-        return True
+        return False
     
