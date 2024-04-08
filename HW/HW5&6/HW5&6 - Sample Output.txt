@@ -1,0 +1,232 @@
+Welcome to Pakudex: Tracker Extraordinaire!
+Enter max capacity of the Pakudex: ???
+Please enter a valid size.
+Enter max capacity of the Pakudex: 3
+The Pakudex can hold 3 species of Pakuri.
+
+Pakudex Main Menu
+-----------------
+1. List Pakuri
+2. Show Pakuri
+3. Add Pakuri
+4. Evolve Pakuri
+5. Sort Pakuri
+6. Exit
+
+What would you like to do? 1
+No Pakuri in Pakudex yet!
+
+Pakudex Main Menu
+-----------------
+1. List Pakuri
+2. Show Pakuri
+3. Add Pakuri
+4. Evolve Pakuri
+5. Sort Pakuri
+6. Exit
+
+What would you like to do? 2
+Enter the name of the species to display: Pikabu
+Error: No such Pakuri!
+
+Pakudex Main Menu
+-----------------
+1. List Pakuri
+2. Show Pakuri
+3. Add Pakuri
+4. Evolve Pakuri
+5. Sort Pakuri
+6. Exit
+
+What would you like to do? 3
+Enter the name of the species to add: Pikabu
+Pakuri species Pikabu successfully added!
+
+Pakudex Main Menu
+-----------------
+1. List Pakuri
+2. Show Pakuri
+3. Add Pakuri
+4. Evolve Pakuri
+5. Sort Pakuri
+6. Exit
+
+What would you like to do? 2
+Enter the name of the species to display: PsyGoose
+Error: No such Pakuri!
+
+Pakudex Main Menu
+-----------------
+1. List Pakuri
+2. Show Pakuri
+3. Add Pakuri
+4. Evolve Pakuri
+5. Sort Pakuri
+6. Exit
+
+What would you like to do? 2
+Enter the name of the species to display: Pikabu
+
+Species: Pikabu
+Attack: 51
+Defense: 47
+Speed: 49
+
+Pakudex Main Menu
+-----------------
+1. List Pakuri
+2. Show Pakuri
+3. Add Pakuri
+4. Evolve Pakuri
+5. Sort Pakuri
+6. Exit
+
+What would you like to do? 3
+Enter the name of the species to add: Charasaurus
+Pakuri species Charasaurus successfully added!
+
+Pakudex Main Menu
+-----------------
+1. List Pakuri
+2. Show Pakuri
+3. Add Pakuri
+4. Evolve Pakuri
+5. Sort Pakuri
+6. Exit
+
+What would you like to do? 3
+Enter the name of the species to add: PsyGoose
+Pakuri species PsyGoose successfully added!
+
+Pakudex Main Menu
+-----------------
+1. List Pakuri
+2. Show Pakuri
+3. Add Pakuri
+4. Evolve Pakuri
+5. Sort Pakuri
+6. Exit
+
+What would you like to do? 3
+Error: Pakudex is full!
+
+Pakudex Main Menu
+-----------------
+1. List Pakuri
+2. Show Pakuri
+3. Add Pakuri
+4. Evolve Pakuri
+5. Sort Pakuri
+6. Exit
+
+What would you like to do? 1
+Pakuri In Pakudex:
+1. Pikabu
+2. Charasaurus
+3. PsyGoose
+
+Pakudex Main Menu
+-----------------
+1. List Pakuri
+2. Show Pakuri
+3. Add Pakuri
+4. Evolve Pakuri
+5. Sort Pakuri
+6. Exit
+
+What would you like to do? 5
+Pakuri have been sorted!
+
+Pakudex Main Menu
+-----------------
+1. List Pakuri
+2. Show Pakuri
+3. Add Pakuri
+4. Evolve Pakuri
+5. Sort Pakuri
+6. Exit
+
+What would you like to do? 1
+Pakuri In Pakudex:
+1. Charasaurus
+2. Pikabu
+3. PsyGoose
+
+Pakudex Main Menu
+-----------------
+1. List Pakuri
+2. Show Pakuri
+3. Add Pakuri
+4. Evolve Pakuri
+5. Sort Pakuri
+6. Exit
+
+What would you like to do? 4
+Enter the name of the species to evolve: Pikabu
+Pikabu has evolved!
+
+Pakudex Main Menu
+-----------------
+1. List Pakuri
+2. Show Pakuri
+3. Add Pakuri
+4. Evolve Pakuri
+5. Sort Pakuri
+6. Exit
+
+What would you like to do? 2
+Enter the name of the species to display: Pikabu
+
+Species: Pikabu
+Attack: 102
+Defense: 188
+Speed: 147
+
+Pakudex Main Menu
+-----------------
+1. List Pakuri
+2. Show Pakuri
+3. Add Pakuri
+4. Evolve Pakuri
+5. Sort Pakuri
+6. Exit
+
+What would you like to do? 4
+Enter the name of the species to evolve: PsyDuck
+Error: No such Pakuri!
+
+Pakudex Main Menu
+-----------------
+1. List Pakuri
+2. Show Pakuri
+3. Add Pakuri
+4. Evolve Pakuri
+5. Sort Pakuri
+6. Exit
+
+What would you like to do? 10
+Unrecognized menu selection!
+
+Pakudex Main Menu
+-----------------
+1. List Pakuri
+2. Show Pakuri
+3. Add Pakuri
+4. Evolve Pakuri
+5. Sort Pakuri
+6. Exit
+
+What would you like to do? STFU
+Unrecognized menu selection!
+
+Pakudex Main Menu
+-----------------
+1. List Pakuri
+2. Show Pakuri
+3. Add Pakuri
+4. Evolve Pakuri
+5. Sort Pakuri
+6. Exit
+
+What would you like to do? 6
+Thanks for using Pakudex! Bye!
